@@ -1,0 +1,33 @@
+name: Pull Request AWS
+
+on:
+    pull_request:
+        branches:
+            - main
+        paths:
+            - 'modules/aws/**'
+            - 'modules/utils/**'
+            - '.github/workflows/pr-aws.yml'
+    workflow_dispatch:
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout repo
+              uses: actions/checkout@v4
+
+            - uses: actions/setup-node@v4
+
+            - name: Install dependencies
+              run: yarn install
+
+            - name: Run ESlint
+              run: yarn run eslint ./modules/aws/
+
+            - name: Run Prettier
+              run: yarn prettier
+
+            - name: Run tests
+              run: yarn test --ci --passWithNoTests modules/aws

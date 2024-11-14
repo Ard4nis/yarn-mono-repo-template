@@ -1,0 +1,29 @@
+version: 2
+updates:
+    - package-ecosystem: 'npm'
+      directory: '/'
+      schedule:
+          interval: 'weekly'
+          day: 'monday'
+          time: '09:00'
+          timezone: 'Europe/Copenhagen'
+      target-branch: 'main'
+      # PR settings
+      open-pull-requests-limit: 10
+      pull-request-branch-name:
+          separator: '-'
+      commit-message:
+          prefix: 'chore'
+          include: 'scope'
+      labels:
+          - 'dependencies'
+          - 'automerge'
+      versioning-strategy: 'lockfile-only'
+      rebase-strategy: 'auto'
+      groups:
+          dependencies:
+              patterns:
+                  - '*'
+              update-types:
+                  - 'minor'
+                  - 'patch'

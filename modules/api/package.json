@@ -1,0 +1,20 @@
+{
+  "name": "@monorepo/api",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "jest",
+    "cdk": "cdk"
+  },
+  "dependencies": {
+    "@monorepo/aws": "workspace:^",
+    "@monorepo/utils": "workspace:^",
+    "@types/node": "^20.16.9",
+    "aws-cdk-lib": "^2.160.0",
+    "constructs": "^10.3.0",
+    "esbuild": "^0.24.0",
+    "source-map-support": "^0.5.21",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  }
+}

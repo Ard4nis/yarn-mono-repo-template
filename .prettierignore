@@ -1,0 +1,19 @@
+# Folders
+.yarn/
+.husky/
+images/
+.vscode/
+
+# Files
+.eslintrc.json
+.gitattributes
+.gitignore
+.pnp.cjs
+.pnp.loader.mjs
+.prettierignore
+.prettier
+.yarnrc.yml
+commitlint.config.js
+yarn.lock
+package.json
+**/dist/**  

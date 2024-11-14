@@ -1,0 +1,8 @@
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "jsx": "react-jsx"
+        // Add module-specific compiler options here
+    },
+    "include": ["src/**/*.ts", "cdk/**/*.ts", "src/**/*.tsx"]
+}

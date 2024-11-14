@@ -1,0 +1,34 @@
+name: Pull Request API
+
+on:
+    pull_request:
+        branches:
+            - main
+        paths:
+            - 'modules/api/**'
+            - 'modules/infrastructure/**'
+            - 'modules/utils/**'
+            - '.github/workflows/pr-api.yml'
+    workflow_dispatch:
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout repo
+              uses: actions/checkout@v4
+
+            - uses: actions/setup-node@v4
+
+            - name: Install dependencies
+              run: yarn install
+
+            - name: Run ESlint
+              run: yarn run eslint ./modules/api/
+
+            - name: Run Prettier
+              run: yarn prettier
+
+            - name: Run tests
+              run: yarn test --ci --passWithNoTests modules/api

@@ -1,0 +1,7 @@
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        // Add module-specific compiler options here
+    },
+    "include": ["src/**/*.ts"]
+}
