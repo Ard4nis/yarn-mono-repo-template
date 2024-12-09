@@ -739,7 +739,7 @@ const RAW_RUNTIME_STATE =
     ],\
     [\
       "@types/react-dom",\
-      "npm:18.3.1"\
+      "npm:18.3.2"\
     ],\
     [\
       "@types/stack-utils",\
@@ -4676,7 +4676,7 @@ const RAW_RUNTIME_STATE =
           ["@monorepo/aws", "workspace:modules/aws"],\
           ["@types/node", "npm:20.17.6"],\
           ["@types/react", "npm:18.3.12"],\
-          ["@types/react-dom", "npm:18.3.1"],\
+          ["@types/react-dom", "npm:18.3.2"],\
           ["@vitejs/plugin-react", "virtual:21f60ed40f67d918f2f7f6c9740818967dd5d3f23ab3946f3aac8e7780bc69d69176ae5e5e55aa449330b9b47c258a87a95a1f4aac40c43e3867c724b3a2eb68#npm:4.3.3"],\
           ["aws-cdk", "npm:2.167.0"],\
           ["aws-cdk-lib", "virtual:1020c631da886395c724e40964c874fd7a1eefd205367a160416cebcac5fd8169bc3daecab8d5196ee98a08eb621fd349472d3b762d270f0965f512d4c3082a9#npm:2.167.0"],\
@@ -5197,14 +5197,23 @@ const RAW_RUNTIME_STATE =
           ["csstype", "npm:3.1.3"]\
         ],\
         "linkType": "HARD"\
+      }],\
+      ["npm:18.3.14", {\
+        "packageLocation": "./.yarn/cache/@types-react-npm-18.3.14-a2ffccc7e1-d925fbfcf0.zip/node_modules/@types/react/",\
+        "packageDependencies": [\
+          ["@types/react", "npm:18.3.14"],\
+          ["@types/prop-types", "npm:15.7.13"],\
+          ["csstype", "npm:3.1.3"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["@types/react-dom", [\
-      ["npm:18.3.1", {\
-        "packageLocation": "./.yarn/cache/@types-react-dom-npm-18.3.1-15935b4e84-8b416551c6.zip/node_modules/@types/react-dom/",\
+      ["npm:18.3.2", {\
+        "packageLocation": "./.yarn/cache/@types-react-dom-npm-18.3.2-8687a1b0ec-22510231af.zip/node_modules/@types/react-dom/",\
         "packageDependencies": [\
-          ["@types/react-dom", "npm:18.3.1"],\
-          ["@types/react", "npm:18.3.12"]\
+          ["@types/react-dom", "npm:18.3.2"],\
+          ["@types/react", "npm:18.3.14"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -10012,7 +10021,7 @@ const RAW_RUNTIME_STATE =
           ["react-router-dom", "virtual:21f60ed40f67d918f2f7f6c9740818967dd5d3f23ab3946f3aac8e7780bc69d69176ae5e5e55aa449330b9b47c258a87a95a1f4aac40c43e3867c724b3a2eb68#npm:6.28.0"],\
           ["@remix-run/router", "npm:1.21.0"],\
           ["@types/react", "npm:18.3.12"],\
-          ["@types/react-dom", "npm:18.3.1"],\
+          ["@types/react-dom", "npm:18.3.2"],\
           ["react", "npm:18.3.1"],\
           ["react-dom", "virtual:21f60ed40f67d918f2f7f6c9740818967dd5d3f23ab3946f3aac8e7780bc69d69176ae5e5e55aa449330b9b47c258a87a95a1f4aac40c43e3867c724b3a2eb68#npm:18.3.1"],\
           ["react-router", "virtual:949bd639e73259277054a7cc3f5d82665e7863ea88460af757382f08da26a3ec900904083038fb29a5940c37587d99eb6fcb8778a195249d4fb106dcf6cc29b8#npm:6.28.0"]\
